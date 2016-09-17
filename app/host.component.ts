@@ -1,8 +1,5 @@
 import { Component } from "@angular/core";
 
-import { AttributeDirective } from "./attribute.directive";
-import { ClickerDirective } from "./clicker.directive";
-
 @Component({
     selector: 'host',
     template: `
@@ -13,11 +10,7 @@ import { ClickerDirective } from "./clicker.directive";
             (event)="elementContent = $event">
             {{elementContent}}
         </h3>
-        <p (myClicker)="clickerContent=$event">{{clickerContent}}</p>`,
-    directives: [
-        AttributeDirective,
-        ClickerDirective
-    ]
+        <p (myClicker)="clickerContent=$event">{{clickerContent}}</p>`
 })
 export class HostComponent {
 

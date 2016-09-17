@@ -1,14 +1,9 @@
-import { Component } from '@angular/core';
-
-import { HostComponent } from "./host.component";
+import { Component } from "@angular/core";
 
 @Component({
     selector: 'app',
     template: `
-        <host *ngIf="showSection('attribute')"></host>`,
-    directives: [
-        HostComponent
-    ]
+        <host *ngIf="showSection('attribute')"></host>`
 })
 export class AppComponent {
 
